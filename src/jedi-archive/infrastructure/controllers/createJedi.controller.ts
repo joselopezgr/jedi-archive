@@ -1,4 +1,4 @@
-import { Controller, HttpCode, Post } from '@nestjs/common';
+import { Body, Controller, HttpCode, Post } from '@nestjs/common';
 import { CreateJediUseCase } from 'src/jedi-archive/application/use_cases/createJedi.useCase';
 import { JediEntity } from 'src/jedi-archive/domain/entities/jedi.entity';
 
@@ -8,7 +8,7 @@ export class CreateJediController {
 
   @Post()
   @HttpCode(201)
-  async createJedi(jedi: JediEntity) {
+  async createJedi(@Body() jedi: JediEntity) {
     return this.createJediUseCase.exec(jedi);
   }
 }

@@ -1,9 +1,9 @@
 export enum JediRanks {
-  Youngling,
-  Padawan,
-  Knight,
-  Master,
-  GrandMaster,
+  Youngling = "Youngling",
+  Padawan = "Padawan",
+  Knight = "Knight",
+  Master = "Master",
+  GrandMaster = "GrandMaster",
 }
 
 type JediRanksValueObjectProps = {

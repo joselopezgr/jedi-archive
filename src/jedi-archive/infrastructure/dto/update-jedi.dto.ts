@@ -1,7 +1,7 @@
-import { JediRanksValueObject } from 'src/jedi-archive/domain/value_objects/jediRanks.valueObject';
+import { JediRanks, JediRanksValueObject } from 'src/jedi-archive/domain/value_objects/jediRanks.valueObject';
 
 export class UpdateJediDto {
   name: string;
-  rank: JediRanksValueObject;
+  rank: JediRanks;
   lightsaberColor: string;
 }
